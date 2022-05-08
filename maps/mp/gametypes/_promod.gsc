@@ -32,6 +32,7 @@ init()
 
 	setDvarDefault( "attach_allow_assault_none", 1, 0, 1 );
 	setDvarDefault( "attach_allow_assault_silencer", 1, 0, 1 );
+	setDvarDefault( "attach_allow_assault_reflex", 1, 0, 1 );
 
 	setDvarDefault( "weap_allow_mp5", 1, 0, 1 );
 	setDvarDefault( "weap_allow_uzi", 1, 0, 1 );
@@ -39,6 +40,7 @@ init()
 
 	setDvarDefault( "attach_allow_specops_none", 1, 0, 1 );
 	setDvarDefault( "attach_allow_specops_silencer", 1, 0, 1 );
+	setDvarDefault( "attach_allow_specops_reflex", 1, 0, 1 );
 
 	setDvarDefault( "weap_allow_m1014", 1, 0, 1 );
 	setDvarDefault( "weap_allow_winchester1200", 1, 0, 1 );
@@ -301,7 +303,7 @@ validClass( classType, preServed, type )
 	else if ( classType == "sniper" )
 		loadout_primary = strTok( "m40a3,remington700", "," );
 
-	loadout_primary_attachment = strTok( "none,silencer", "," );
+	loadout_primary_attachment = strTok( "none,silencer,reflex", "," );
 	loadout_secondary = strTok( "deserteaglegold,deserteagle,colt45,usp,beretta", "," );
 	loadout_secondary_attachment = strTok( "none,silencer", "," );
 	loadout_grenade = strTok( "flash_grenade,smoke_grenade", "," );
@@ -433,7 +435,7 @@ processLoadoutResponse( respString )
 
 			case "loadout_primary_attachment":
 			case "loadout_secondary_attachment":
-				if ( ( subTokens[1] == "assault" || subTokens[1] == "specops" || subTokens[1] == "pistol" ) && ( subTokens[2] == "none" || subTokens[2] == "silencer" ) )
+				if ( ( subTokens[1] == "assault" || subTokens[1] == "specops" || subTokens[1] == "pistol" ) && ( subTokens[2] == "none" || subTokens[2] == "silencer" || subTokens[2] == "reflex") )
 				{
 					if ( subTokens[0] == "loadout_primary_attachment" && self.pers[self.class]["loadout_primary"] == "mp44" )
 					{
