@@ -272,8 +272,10 @@ menuDef { \
 	LOCAL_ATTACHMENT_INFO_WINDOW( "loadout_"ptype )\
 	LOCAL_ATTACHMENT_ITEM( 1, "1. No Attachment", stat_slot, "assault", NUM_NONE, "none", ;, ptype, statDvar, 0 )\
 	LOCAL_ATTACHMENT_ITEM( 2, "2. Silencer", stat_slot, "assault", NUM_SUPPRESSOR, "silencer", ;, ptype, statDvar, SILENCER_NEW_BITMASK )\
+	LOCAL_ATTACHMENT_ITEM( 3, "3. Red Dot Sight", stat_slot, "assault", NUM_REFLEX, "reflex", ;, ptype, statDvar, REDDOT_NEW_BITMASK )\
 	execKey "1" { LOCAL_ATTACHMENT_ACTION( 1, "none", 1, "assault" ); }\
 	execKey "2" { LOCAL_ATTACHMENT_ACTION( 2, "silencer", 1, "assault" ); }\
+	execKey "3" { LOCAL_ATTACHMENT_ACTION( 3, "reflex", 1, "assault" ); }\
 }\
 menuDef	{ \
 	IMPROVED_POPUP_SETUP_ONOPEN( "ocd_attachment_popup_SMG"suffix, 6, (CHOICE_X( pos )-2), (CHOICE_Y( pos )+26+y_offset), ;, execnow "set "UI_FOCUSFIRST" "REF_ATTACHMENT_NONE"; set ui_inside_popup attachment";, 0 )\
@@ -281,8 +283,10 @@ menuDef	{ \
 	LOCAL_ATTACHMENT_INFO_WINDOW( "loadout_"ptype )\
 	LOCAL_ATTACHMENT_ITEM( 1, "1. No Attachment", stat_slot, "specops", NUM_NONE, "none", ;, ptype, statDvar, 0 )\
 	LOCAL_ATTACHMENT_ITEM( 2, "2. Silencer", stat_slot, "specops", NUM_SUPPRESSOR, "silencer", ;, ptype, statDvar, SILENCER_NEW_BITMASK )\
+	LOCAL_ATTACHMENT_ITEM( 3, "3. Red Dot Sight", stat_slot, "specops", NUM_REFLEX, "reflex", ;, ptype, statDvar, REDDOT_NEW_BITMASK )\
 	execKey "1" { LOCAL_ATTACHMENT_ACTION( 1, "none", 1, "specops" ); }\
 	execKey "2" { LOCAL_ATTACHMENT_ACTION( 2, "silencer", 1, "specops" ); }\
+	execKey "3" { LOCAL_ATTACHMENT_ACTION( 3, "reflex", 1, "specops" ); }\
 }
 menuDef	{
 	IMPROVED_POPUP_SETUP_ONOPEN( "ocd_attachment_popup_pistol", 6, (CHOICE_X( 2 )-2), (CHOICE_Y( 2 )), ;, execnow "set "UI_FOCUSFIRST" "REF_ATTACHMENT_NONE"; set ui_inside_popup attachment";, 0 )

@@ -92,6 +92,7 @@ main()
 
 	setDvar( "attach_allow_assault_none", 1 );
 	setDvar( "attach_allow_assault_silencer", 1 );
+	setDvar( "attach_allow_assault_reflex", 1 );
 
 	setDvar( "weap_allow_mp5", 1 );
 	setDvar( "weap_allow_uzi", 1 );
@@ -99,6 +100,7 @@ main()
 
 	setDvar( "attach_allow_specops_none", 1 );
 	setDvar( "attach_allow_specops_silencer", 1 );
+	setDvar( "attach_allow_specops_reflex", 1 );
 
 	setDvar( "weap_allow_m1014", 1 );
 	setDvar( "weap_allow_winchester1200", 1 );

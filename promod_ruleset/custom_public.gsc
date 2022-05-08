@@ -94,6 +94,7 @@ main()
 	// assault attachments
 	setDvar( "attach_allow_assault_none", 1 );
 	setDvar( "attach_allow_assault_silencer", 1 );
+	setDvar( "attach_allow_assault_reflex", 1 );
 
 	// smg
 	setDvar( "weap_allow_mp5", 1 );
@@ -103,6 +104,7 @@ main()
 	// smg attachments
 	setDvar( "attach_allow_specops_none", 1 );
 	setDvar( "attach_allow_specops_silencer", 1 );
+	setDvar( "attach_allow_specops_reflex", 1 );
 
 	// shotgun
 	setDvar( "weap_allow_m1014", 1 );

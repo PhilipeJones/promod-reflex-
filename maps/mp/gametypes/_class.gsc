@@ -119,6 +119,9 @@ primaryWeapon()
 		if(self.pers[class]["loadout_primary_attachment"] == "silencer")
 			s = "_silencer";
 		else
+			if(self.pers[class]["loadout_primary_attachment"] == "reflex")
+				s = "_reflex";
+		else
 			self.pers[class]["loadout_primary_attachment"] = "none";
 
 		primaryWeapon += s+"_mp";
