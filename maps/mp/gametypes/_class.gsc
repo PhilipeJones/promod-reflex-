@@ -86,10 +86,12 @@ primaryWeapon()
 		case "mp5":
 		case "uzi":
 		case "ak74u":
+		case "skorpion":
 		case "winchester1200":
 		case "m1014":
 		case "m40a3":
 		case "remington700":
+		case "barrett":
 			break;
 		default:
 			primaryWeapon = getDvar("class_"+class+"_primary");

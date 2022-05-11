@@ -100,6 +100,7 @@ main()
 	setDvar( "weap_allow_mp5", 1 );
 	setDvar( "weap_allow_uzi", 1 );
 	setDvar( "weap_allow_ak74u", 1 );
+	setDvar( "weap_allow_skorpion", 1 );
 
 	// smg attachments
 	setDvar( "attach_allow_specops_none", 1 );
@@ -113,6 +114,7 @@ main()
 	// sniper
 	setDvar( "weap_allow_m40a3", 1 );
 	setDvar( "weap_allow_remington700", 1 );
+	setDvar( "weap_allow_barrett", 1 );
 
 	// pistol
 	setDvar( "weap_allow_beretta", 1 );

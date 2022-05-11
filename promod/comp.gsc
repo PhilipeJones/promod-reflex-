@@ -97,6 +97,7 @@ main()
 	setDvar( "weap_allow_mp5", 1 );
 	setDvar( "weap_allow_uzi", 1 );
 	setDvar( "weap_allow_ak74u", 1 );
+	setDvar( "weap_allow_skorpion", 1 );
 
 	setDvar( "attach_allow_specops_none", 1 );
 	setDvar( "attach_allow_specops_silencer", 1 );
@@ -107,6 +108,7 @@ main()
 
 	setDvar( "weap_allow_m40a3", 1 );
 	setDvar( "weap_allow_remington700", 1 );
+	setDvar( "weap_allow_barrett", 1 );
 
 	setDvar( "weap_allow_beretta", 1 );
 	setDvar( "weap_allow_colt45", 1 );

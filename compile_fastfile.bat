@@ -26,7 +26,7 @@ copy mod.csv ..\..\zone_source /Y
 cd ..\..\bin
 linker_pc.exe -language english -compress -cleanup mod -verbose
 
-cd ..\mods\pml220-Dallas
+cd ..\mods\pml220-DallasReflex
 copy ..\..\zone\english\mod.ff
 
 pause

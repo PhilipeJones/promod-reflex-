@@ -33,20 +33,26 @@ init()
 	setDvarDefault( "attach_allow_assault_none", 1, 0, 1 );
 	setDvarDefault( "attach_allow_assault_silencer", 1, 0, 1 );
 	setDvarDefault( "attach_allow_assault_reflex", 1, 0, 1 );
+	setDvarDefault( "attach_allow_assault_test", 1, 0, 1 );
+	setDvarDefault( "attach_allow_assault_test2", 1, 0, 1 );
 
 	setDvarDefault( "weap_allow_mp5", 1, 0, 1 );
 	setDvarDefault( "weap_allow_uzi", 1, 0, 1 );
 	setDvarDefault( "weap_allow_ak74u", 1, 0, 1 );
+	setDvarDefault( "weap_allow_skorpion", 1, 0, 1 );
 
 	setDvarDefault( "attach_allow_specops_none", 1, 0, 1 );
 	setDvarDefault( "attach_allow_specops_silencer", 1, 0, 1 );
 	setDvarDefault( "attach_allow_specops_reflex", 1, 0, 1 );
+	setDvarDefault( "attach_allow_specops_test", 1, 0, 1 );
+	setDvarDefault( "attach_allow_specops_test2", 1, 0, 1 );
 
 	setDvarDefault( "weap_allow_m1014", 1, 0, 1 );
 	setDvarDefault( "weap_allow_winchester1200", 1, 0, 1 );
 
 	setDvarDefault( "weap_allow_m40a3", 1, 0, 1 );
 	setDvarDefault( "weap_allow_remington700", 1, 0, 1 );
+	setDvarDefault( "weap_allow_barrett", 1, 0, 1 );
 
 	setServerDvarDefault( "weap_allow_beretta", 1, 0, 1 );
 	setServerDvarDefault( "weap_allow_colt45", 1, 0, 1 );
@@ -297,11 +303,11 @@ validClass( classType, preServed, type )
 	if ( classType == "assault" )
 		loadout_primary = strTok( "m16,ak47,m4,g3,g36c,m14,mp44", "," );
 	else if ( classType == "specops" )
-		loadout_primary = strTok( "mp5,uzi,ak74u", "," );
+		loadout_primary = strTok( "mp5,uzi,ak74u,skorpion", "," );
 	else if ( classType == "demolitions" )
 		loadout_primary = strTok( "winchester1200,m1014", "," );
 	else if ( classType == "sniper" )
-		loadout_primary = strTok( "m40a3,remington700", "," );
+		loadout_primary = strTok( "m40a3,remington700,barrett", "," );
 
 	loadout_primary_attachment = strTok( "none,silencer,reflex", "," );
 	loadout_secondary = strTok( "deserteaglegold,deserteagle,colt45,usp,beretta", "," );

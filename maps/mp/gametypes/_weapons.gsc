@@ -16,6 +16,7 @@ init()
 	precacheItem( "ak74u_mp" );
 	precacheItem( "ak74u_reflex_mp" );
 	precacheItem( "ak74u_silencer_mp" );
+	precacheItem( "barrett_mp" );
 	precacheItem( "beretta_mp" );
 	precacheItem( "beretta_silencer_mp" );
 	precacheItem( "colt45_mp" );
@@ -46,6 +47,9 @@ init()
 	precacheItem( "mp5_silencer_mp" );
 	precacheItem( "mp44_mp" );
 	precacheItem( "remington700_mp" );
+	precacheItem( "skorpion_mp" );
+	precacheItem( "skorpion_reflex_mp" );
+	precacheItem( "skorpion_silencer_mp" );
 	precacheItem( "usp_mp" );
 	precacheItem( "usp_silencer_mp" );
 	precacheItem( "uzi_mp" );

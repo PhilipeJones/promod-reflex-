@@ -1005,7 +1005,7 @@
 
 		ENFORCE( dvarint( cl_maxpackets ) != 100, "SET CL_MAXPACKETS TO 100", -210 );
 		ENFORCE( dvarint( r_dlightlimit ), "SET R_DLIGHTLIMIT TO 0", -190 );
-		ENFORCE( dvarint( com_maxfps ) < 40 || dvarint( com_maxfps ) > 250, "SET COM_MAXFPS WITHIN 40-250", -170 );
+		ENFORCE( dvarint( com_maxfps ) < 40 || dvarint( com_maxfps ) > 333, "SET COM_MAXFPS WITHIN 40-333", -170 );
 		ENFORCE( dvarfloat( r_lodscaleskinned ) != 1, "SET R_LODSCALESKINNED TO 1", -150 );
 		ENFORCE( dvarfloat( r_lodscalerigid ) != 1, "SET R_LODSCALERIGID TO 1", -130 );
 		ENFORCE( dvarint( rate ) != 25000, "SET RATE TO 25000", -110 );
