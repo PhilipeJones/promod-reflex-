@@ -204,7 +204,7 @@ menuDef	{\
 	execKey "5" { LOCAL_PRIMARY_WEAPON_ACTION( suffix, "assault", REF_G36C ); }\
 	execKey "6" { LOCAL_PRIMARY_WEAPON_ACTION( suffix, "assault", REF_M14 ); }\
 	execKey "7" { LOCAL_PRIMARY_WEAPON_ACTION( suffix, "assault", REF_MP44 ); }\
-	execKey "8" { LOCAL_PRIMARY_WEAPON_ACTION( suffix, "assault", REF_M14_SCOPED_GHIL ); }\
+	execKey "9" { LOCAL_PRIMARY_WEAPON_ACTION( suffix, "assault", REF_M14_SCOPED_GHIL ); }\
 }\
 menuDef	{\
 	IMPROVED_POPUP_SETUP_ONOPEN( "ocd_popup_cac_SMG"suffix, 7, (CHOICE_X( pos )-2), (CHOICE_Y( pos )-28+y_offset), ;, execnow "set "UI_FOCUSFIRST" "REF_MP5";set ui_inside_popup smg";, 0 )\
@@ -212,10 +212,12 @@ menuDef	{\
 	LOCAL_WEAPON_ITEM( suffix, 1, "1. MP5", "SMG", REF_MP5 )\
 	LOCAL_WEAPON_ITEM( suffix, 2, "2. Mini-Uzi", "SMG", REF_UZI )\
 	LOCAL_WEAPON_ITEM( suffix, 3, "3. AK-74u", "SMG", REF_AK74U )\
+	LOCAL_WEAPON_ITEM( suffix, 4, "4. Skorpion", "SMG", REF_SKORPION )\
 	execKey "1" { LOCAL_PRIMARY_WEAPON_ACTION( suffix, "SMG", REF_MP5 ); }\
 	execKey "2" { LOCAL_PRIMARY_WEAPON_ACTION( suffix, "SMG", REF_UZI ); }\
 	execKey "3" { LOCAL_PRIMARY_WEAPON_ACTION( suffix, "SMG", REF_AK74U ); }\
-	execKey "9" { LOCAL_PRIMARY_WEAPON_ACTION( suffix, "SMG", REF_SKORPION ); }\
+	execKey "4" { LOCAL_PRIMARY_WEAPON_ACTION( suffix, "SMG", REF_SKORPION ); }\
+	execKey "9" { LOCAL_PRIMARY_WEAPON_ACTION( suffix, "SMG", REF_P90); }\
 }\
 menuDef	{\
 	IMPROVED_POPUP_SETUP_ONOPEN( "ocd_popup_cac_shotgun"suffix, 7, (CHOICE_X( pos )-2), (CHOICE_Y( pos )-28+y_offset), ;, execnow "set "UI_FOCUSFIRST" "REF_WINCHESTER1200"; set ui_inside_popup shotgun";, 0 )\
@@ -230,9 +232,10 @@ menuDef	{\
 	LOCAL_WEAPON_INFO_WINDOW( "ui_primary_highlighted" )\
 	LOCAL_WEAPON_ITEM( suffix, 1, "1. M40A3", "sniper", REF_M40A3 )\
 	LOCAL_WEAPON_ITEM( suffix, 2, "2. R700", "sniper", REF_REMINGTON700 )\
+	LOCAL_WEAPON_ITEM( suffix, 3, "3. Barrett .50cal", "sniper", REF_BARRETT )\
 	execKey "1" { LOCAL_PRIMARY_WEAPON_ACTION( suffix, "sniper", REF_M40A3 ); }\
 	execKey "2" { LOCAL_PRIMARY_WEAPON_ACTION( suffix, "sniper", REF_REMINGTON700 ); }\
-	execKey "9" { LOCAL_PRIMARY_WEAPON_ACTION( suffix, "sniper", REF_BARRETT ); }\
+	execKey "3" { LOCAL_PRIMARY_WEAPON_ACTION( suffix, "sniper", REF_BARRETT ); }\
 }
 
 LOCAL_MASTER_WEAPON_GROUP( "", 1, 0 )

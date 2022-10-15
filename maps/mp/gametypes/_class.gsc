@@ -87,6 +87,7 @@ primaryWeapon()
 		case "uzi":
 		case "ak74u":
 		case "skorpion":
+		case "p90":
 		case "winchester1200":
 		case "m1014":
 		case "m40a3":

@@ -40,6 +40,7 @@ init()
 	setDvarDefault( "weap_allow_uzi", 1, 0, 1 );
 	setDvarDefault( "weap_allow_ak74u", 1, 0, 1 );
 	setDvarDefault( "weap_allow_skorpion", 1, 0, 1 );
+	setDvarDefault( "weap_allow_p90", 1, 0, 1 );
 
 	setDvarDefault( "attach_allow_specops_none", 1, 0, 1 );
 	setDvarDefault( "attach_allow_specops_silencer", 1, 0, 1 );
@@ -303,7 +304,7 @@ validClass( classType, preServed, type )
 	if ( classType == "assault" )
 		loadout_primary = strTok( "m16,ak47,m4,g3,g36c,m14,mp44", "," );
 	else if ( classType == "specops" )
-		loadout_primary = strTok( "mp5,uzi,ak74u,skorpion", "," );
+		loadout_primary = strTok( "mp5,uzi,ak74u,skorpion,p90", "," );
 	else if ( classType == "demolitions" )
 		loadout_primary = strTok( "winchester1200,m1014", "," );
 	else if ( classType == "sniper" )

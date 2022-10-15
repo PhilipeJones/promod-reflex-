@@ -98,6 +98,7 @@ main()
 	setDvar( "weap_allow_uzi", 1 );
 	setDvar( "weap_allow_ak74u", 1 );
 	setDvar( "weap_allow_skorpion", 1 );
+	setDvar( "weap_allow_p90", 1 );
 
 	setDvar( "attach_allow_specops_none", 1 );
 	setDvar( "attach_allow_specops_silencer", 1 );

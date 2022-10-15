@@ -73,9 +73,9 @@ main()
 
 	// class limits
 	setDvar( "class_assault_limit", 64 );
-	setDvar( "class_specops_limit", 2 );
-	setDvar( "class_demolitions_limit", 1 );
-	setDvar( "class_sniper_limit", 1 );
+	setDvar( "class_specops_limit", 4 );
+	setDvar( "class_demolitions_limit", 2 );
+	setDvar( "class_sniper_limit", 2 );
 
 	setDvar( "class_assault_allowdrop", 1 );
 	setDvar( "class_specops_allowdrop", 1 );
@@ -101,7 +101,8 @@ main()
 	setDvar( "weap_allow_uzi", 1 );
 	setDvar( "weap_allow_ak74u", 1 );
 	setDvar( "weap_allow_skorpion", 1 );
-
+	setDvar( "weap_allow_p90", 1 );
+	
 	// smg attachments
 	setDvar( "attach_allow_specops_none", 1 );
 	setDvar( "attach_allow_specops_silencer", 1 );
@@ -204,12 +205,12 @@ main()
 	// various
 	setDvar( "g_allowVote", 0 ); // [0-1]
 	setDvar( "g_deadChat", 1 ); // [0-1]
-	setDvar( "scr_game_allowkillcam", 0 ); // [0-1]
+	setDvar( "scr_game_allowkillcam", 1 ); // [0-1]
 	setDvar( "scr_game_spectatetype", 1 ); // [0-2] (disabled, team only, all)
 	setDvar( "scr_game_matchstarttime", 10 ); // [0->] (seconds)
 	setDvar( "scr_enable_hiticon", 2 ); // [0-2] (disabled, hit icon on, hit icon on but not through walls)
 	setDvar( "scr_enable_scoretext", 1 ); // [0-1] (exp popups, +5 etc)
-	setDvar( "promod_allow_strattime", 0 ); // [0-1] (sd only)
+	setDvar( "promod_allow_strattime", 1 ); // [0-1] (sd only)
 	setDvar( "promod_allow_readyup", 0 ); // [0-1]
 	setDvar( "promod_kniferound", 0 ); // [0-1] (sd only)
 	setDvar( "g_maxDroppedWeapons", 16 ); // [2-32] (maximum number of dropped weapons before recycling)

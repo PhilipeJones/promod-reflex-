@@ -46,6 +46,9 @@ init()
 	precacheItem( "mp5_reflex_mp" );
 	precacheItem( "mp5_silencer_mp" );
 	precacheItem( "mp44_mp" );
+	precacheItem( "p90_mp");
+	precacheItem( "p90_reflex_mp");
+	precacheItem( "p90_silencer_mp");
 	precacheItem( "remington700_mp" );
 	precacheItem( "skorpion_mp" );
 	precacheItem( "skorpion_reflex_mp" );
